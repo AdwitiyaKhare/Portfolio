@@ -65,9 +65,7 @@ export default function Content({ activeSection }) {
           <div>
             <Card
               title="Image Classification of Indian Food Dishes"
-              content={`• Built a CNN model for classifying Indian food dishes with high accuracy.
-• Integrated with a Flask-based web app for real-time predictions.
-• Tools: Python, PyTorch, Flask, Google Colab.`}
+              content={`<ul><li>Built a CNN model for classifying Indian food dishes with high accuracy.</li><li>Integrated with a Flask-based web app for real-time predictions.</li><li>Tools: Python, PyTorch, Flask, Google Colab.</li></ul>`}
               icon={<FaProjectDiagram />}
               onClick={() =>
                 openLink("https://github.com/AdwitiyaKhare/food-classifier")
@@ -75,11 +73,7 @@ export default function Content({ activeSection }) {
             />
             <Card
               title="Wanderlust – Full Stack Travel Review Web App"
-              content={`• Built a full-stack Node.js and Express web application for listing, reviewing, and managing travel destinations (Airbnb-like clone).
-• Implemented user authentication (Passport.js), session management (connect-mongo), flash messages, and RESTful routing.
-• Used MongoDB with Mongoose for storage and retrieval.
-• Deployed on Render with a MongoDB Atlas backend.
-• Features: User registration/login, image uploads (Multer), API routes, CRUD reviews, and responsive EJS frontend.`}
+              content={`<ul><li>Built a full-stack Node.js and Express web application for listing, reviewing, and managing travel destinations (Airbnb-like clone).</li><li>Implemented user authentication (Passport.js), session management (connect-mongo), flash messages, and RESTful routing.</li><li>Used MongoDB with Mongoose for storage and retrieval.</li><li>Deployed on Render with a MongoDB Atlas backend.</li><li>Features: User registration/login, image uploads (Multer), API routes, CRUD reviews, and responsive EJS frontend.</li></ul>`}
               icon={<FaGlobe />}
               onClick={() =>
                 openLink("https://wanderlust-8lw3.onrender.com/listings")
