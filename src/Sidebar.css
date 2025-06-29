@@ -1,47 +1,76 @@
 .sidebar {
-    position: fixed;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 20rem;
-    background-color: #f9f9f9;
-    border-right: 1px solid #cccccc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-    z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 20rem;
+  background-color: #f9f9f9;
+  border-right: 1px solid #cccccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  z-index: 100;
+}
+
+.sidebar-top {
+  text-align: center;
+  color: #222222;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0 1rem;
+  user-select: none;
+}
+
+.sidebar-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.sidebar-buttons .btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sidebar-footer {
+  text-align: center;
+  color: #444444;
+  padding: 0 1rem;
+  opacity: 0.95;
+  font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
   }
-  
-  .sidebar-top {
-    text-align: center;
-    color: #222222;
-    font-size: 1rem;
-    line-height: 1.4;
-    padding: 0 1rem;
-    user-select: none;
-  }
-  
+
   .sidebar-buttons {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
   }
-  
-  .sidebar-buttons .btn {
-    width: 100%;
-    display: block;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
+
+  .sidebar-top,
   .sidebar-footer {
-    text-align: center;
-    color: #444444;
-    padding: 0 1rem;
-    opacity: 0.95;
-    font-style: italic;
+    display: none;
   }
-  
+
+  .sidebar-buttons .btn {
+    width: 20%;
+    margin: 0 0.3rem;
+    padding: 0.4rem 0.8rem;
+  }
+}

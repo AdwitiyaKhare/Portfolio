@@ -1,10 +1,16 @@
 .sidebar-top {
-    margin-top: 1rem;
-    color: #222222;
+  margin-top: 1rem;
+  color: #222222;
+}
+
+.datetime {
+  font-family: 'Fira Code', monospace;
+  color: #333333;
+  font-size: 0.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar-top {
+    display: none;
   }
-  
-  .datetime {
-    font-family: 'Fira Code', monospace;
-    color: #333333;
-  }
-  
+}

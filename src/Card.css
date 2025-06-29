@@ -50,3 +50,39 @@
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 170, 0, 0.2);
 }
+
+@media screen and (max-width: 1100px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    flex-direction: column;
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+
+  .card-icon {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #cccccc;
+    padding: 0.5rem 0;
+    font-size: 2rem;
+  }
+
+  .card-content {
+    padding: 0.8rem;
+  }
+
+  .card-content h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .card-content p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

@@ -1,4 +1,5 @@
 import Card from "./Card.jsx";
+import ProfileCard from "./ProfileCard.jsx";
 import {
   FaUser,
   FaCode,
@@ -132,5 +133,5 @@ export default function Content({ activeSection }) {
     }
   };
 
-  return <div className="content-section">{renderSection()}</div>;
+  return <div className="content-section"><ProfileCard />{renderSection()}</div>;
 }
