@@ -1,0 +1,30 @@
+.btn {
+    background-color: #ffffff;
+    color: #111111;
+    padding: 0.5rem 1rem;
+    border: 1px solid #111111;
+    cursor: pointer;
+    transition: all 150ms ease-in-out, box-shadow 200ms ease;
+    font-family: 'Fira Code', monospace;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn:hover {
+    background-color: #111111;
+    color: #ffffff;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  }
+  
