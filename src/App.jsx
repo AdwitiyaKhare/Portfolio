@@ -4,7 +4,7 @@ import Content from "./Content.jsx";
 import "./App.css"; // Optional
 
 export default function App() {
-  const [activeSection, setActiveSection] = useState("About");
+  const [activeSection, setActiveSection] = useState("Projects");
 
   return (
     <div className="app-container">
