@@ -12,16 +12,34 @@ export default function SidebarFooter() {
     if (cachedQuote && cachedDate === today) {
       setQuote(cachedQuote);
     } else {
-      fetch("https://zenquotes.io/api/today")
-        .then((response) => response.json())
+      const url =
+        "https://api.allorigins.win/get?url=" +
+        encodeURIComponent("https://zenquotes.io/api/today");
+
+      fetch(url)
+        .then((response) => {
+          if (response.ok) return response.json();
+          throw new Error("Network response was not ok.");
+        })
         .then((data) => {
-          if (data && data[0] && data[0].q && data[0].a) {
-            const formattedQuote = `"${data[0].q}" — ${data[0].a}`;
-            setQuote(formattedQuote);
-            localStorage.setItem("quoteOfTheDay", formattedQuote);
-            localStorage.setItem("quoteDate", today);
-          } else {
-            setQuote("No quote found today.");
+          try {
+            const parsedData = JSON.parse(data.contents);
+            if (
+              parsedData &&
+              parsedData[0] &&
+              parsedData[0].q &&
+              parsedData[0].a
+            ) {
+              const formattedQuote = `"${parsedData[0].q}" — ${parsedData[0].a}`;
+              setQuote(formattedQuote);
+              localStorage.setItem("quoteOfTheDay", formattedQuote);
+              localStorage.setItem("quoteDate", today);
+            } else {
+              setQuote("No quote found today.");
+            }
+          } catch (e) {
+            console.error("Error parsing quote data:", e);
+            setQuote("Failed to parse quote.");
           }
         })
         .catch((error) => {
