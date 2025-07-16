@@ -1,6 +1,7 @@
 import Card from "./Card.jsx";
 import ProfileCard from "./ProfileCard.jsx";
 import "./Content.css";
+import SidebarRight from "./SidebarRight.jsx";
 import {
   FaUser,
   FaCode,
@@ -120,6 +121,7 @@ export default function Content() {
           onClick={() => openLink("https://linkedin.com/in/adwitiyakhare")}
         />
       </section>
+      <SidebarRight />
     </div>
   );
 }

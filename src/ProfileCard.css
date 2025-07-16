@@ -94,6 +94,7 @@
   @media screen and (max-width: 768px) {
     .profile-card-wrapper {
         justify-content: center;
+        top: 4.5rem;
     }
   }
 
@@ -108,11 +109,14 @@
     }
   }
   
-  @media screen and (max-width: 412px) {
-    .profile-card {
-      padding: 1rem;
+  @media screen and (max-width: 506px) {
+    .profile-card-wrapper {
+        top: 3.5rem;
     }
-    .contact-item {
-    font-size: 0.7rem;
   }
+
+  @media screen and (max-width: 412px) {
+    .contact-item {
+      font-size: 0.7rem;
+    }
   }
