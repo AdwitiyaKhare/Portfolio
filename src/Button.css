@@ -41,7 +41,7 @@
   .btn {
     padding: 0.4rem 0.8rem;
     font-weight: 900;
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -49,6 +49,6 @@
   .btn {
     padding: 2px 2px !important;
     font-weight: 900;
-    font-size: 0.7rem;
+    font-size: 0.55rem;
   }
 }
