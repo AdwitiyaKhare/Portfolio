@@ -3,7 +3,7 @@ import "./Sidebar.css";
 import SidebarTop from "./SidebarTop.jsx";
 import SidebarFooter from "./SidebarFooter.jsx";
 
-export default function Sidebar({ setActiveSection }) {
+export default function Sidebar() {
   const sections = [
     "About",
     "Skills",
@@ -12,20 +12,25 @@ export default function Sidebar({ setActiveSection }) {
     "Contact",
   ];
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
   return (
     <div className="sidebar">
       <SidebarTop />
-
       <div className="sidebar-buttons">
         {sections.map((sec, idx) => (
           <Button
             key={idx}
             btnTitle={sec}
-            onClick={() => setActiveSection(sec)}
+            onClick={() => scrollToSection(sec)}
           />
         ))}
       </div>
-
       <SidebarFooter />
     </div>
   );

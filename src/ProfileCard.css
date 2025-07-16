@@ -1,5 +1,8 @@
 .profile-card-wrapper {
     display: flex;
+    position: sticky;
+    top: -8px;
+    z-index: 1;
   }
   
   .profile-card {
@@ -7,7 +10,7 @@
     align-items: center;
     background-color: #ffffff;
     color: #222222;
-    border-radius: 12px;
+    border-radius: 14px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     width: 66%;
@@ -38,7 +41,7 @@
   
   .profile-details h2 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.7rem;
+    font-size: 2rem;
     font-weight: bold;
   }
   
@@ -105,3 +108,11 @@
     }
   }
   
+  @media screen and (max-width: 412px) {
+    .profile-card {
+      padding: 1rem;
+    }
+    .contact-item {
+    font-size: 0.7rem;
+  }
+  }
