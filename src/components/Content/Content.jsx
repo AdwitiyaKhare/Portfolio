@@ -1,7 +1,7 @@
-import Card from "./Card.jsx";
-import ProfileCard from "./ProfileCard.jsx";
+import Card from "../Card/Card.jsx";
+import ProfileCard from "../ProfileCard/ProfileCard.jsx";
 import "./Content.css";
-import SidebarRight from "./SidebarRight.jsx";
+import SidebarRight from "../Sidebar/SidebarRight.jsx";
 import {
   FaUser,
   FaCode,

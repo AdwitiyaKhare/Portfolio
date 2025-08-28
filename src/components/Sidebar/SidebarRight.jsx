@@ -1,7 +1,7 @@
 import { useState } from "react";
 import emailjs from "emailjs-com";
 import "./SidebarRight.css";
-import Button from "./Button.jsx";
+import Button from "../Button/Button.jsx";
 
 export default function SidebarRight() {
   const [formData, setFormData] = useState({

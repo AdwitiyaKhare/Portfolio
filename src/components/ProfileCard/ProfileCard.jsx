@@ -1,5 +1,5 @@
 import "./ProfileCard.css";
-import me from "./assets/me.png";
+import me from "../../assets/me.png";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
 
 export default function ProfileCard() {
