@@ -11,6 +11,7 @@ import {
   FaLaptopCode,
   FaEnvelope,
   FaGithub,
+  FaShoppingCart,
   FaMapMarkerAlt,
   FaLinkedin,
   FaGlobe,
@@ -65,17 +66,42 @@ export default function Content() {
       {/* Projects Section */}
       <section id="Projects">
         <h2>Projects</h2>
+
         <Card
           title="Wanderlust – Full Stack Travel Review Web App"
-          content={`<ul><li>Built a full-stack Node.js and Express web application for listing, reviewing, and managing travel destinations (Airbnb-like clone).</li><li>Implemented user authentication (Passport.js), session management (connect-mongo), flash messages, and RESTful routing.</li><li>Used MongoDB with Mongoose for storage and retrieval.</li><li>Deployed on Render with a MongoDB Atlas backend.</li><li>Features: User registration/login, image uploads (Multer), API routes, CRUD reviews, and responsive EJS frontend.</li></ul>`}
+          content={`<ul>
+      <li>Built a full-stack Node.js and Express web application for listing, reviewing, and managing travel destinations (Airbnb-like clone).</li>
+      <li>Implemented user authentication (Passport.js), session management (connect-mongo), flash messages, and RESTful routing.</li>
+      <li>Used MongoDB with Mongoose for storage and retrieval.</li>
+      <li>Deployed on Render with a MongoDB Atlas backend.</li>
+      <li>Features: User registration/login, image uploads (Multer), API routes, CRUD reviews, and responsive EJS frontend.</li>
+    </ul>`}
           icon={<FaGlobe />}
           onClick={() =>
             openLink("https://wanderlust-8lw3.onrender.com/listings")
           }
         />
+
+        <Card
+          title="StripeMart – Full Stack E-Commerce Application"
+          content={`<ul>
+      <li>Developed a full-stack e-commerce platform with secure authentication and payment processing.</li>
+      <li>Integrated Google OAuth for login and Stripe for real-time payments.</li>
+      <li>Implemented order management, purchase tracking, and EmailJS-based email notifications.</li>
+      <li>Built a responsive UI with light/dark mode and deployed frontend on Vercel.</li>
+      <li>Tech Stack: React, Node.js, Express, MongoDB, Stripe, Google OAuth.</li>
+    </ul>`}
+          icon={<FaShoppingCart />}
+          onClick={() => openLink("https://stripemart.vercel.app/")}
+        />
+
         <Card
           title="Image Classification of Indian Food Dishes"
-          content={`<ul><li>Built a CNN model for classifying Indian food dishes with high accuracy.</li><li>Integrated with a Flask-based web app for real-time predictions.</li><li>Tools: Python, PyTorch, Flask, Google Colab.</li></ul>`}
+          content={`<ul>
+      <li>Built a CNN model for classifying Indian food dishes with high accuracy.</li>
+      <li>Integrated with a Flask-based web app for real-time predictions.</li>
+      <li>Tools: Python, PyTorch, Flask, Google Colab.</li>
+    </ul>`}
           icon={<FaProjectDiagram />}
           onClick={() =>
             openLink("https://github.com/AdwitiyaKhare/food-classifier")
@@ -86,12 +112,23 @@ export default function Content() {
       {/* Coding Profiles Section */}
       <section id="Coding Profiles">
         <h2>Coding Profiles</h2>
+
         <Card
           title="LeetCode"
           content="Solved 500+ problems and earned the 365 Days Badge for problem-solving consistency."
           icon={<FaCode />}
           onClick={() => openLink("https://leetcode.com/u/adwitiyakhare/")}
         />
+
+        <Card
+          title="Codeforces"
+          content="Active competitive programmer with regular contest participation and strong problem-solving skills."
+          icon={<FaCode />}
+          onClick={() =>
+            openLink("https://codeforces.com/profile/adwitiya_khare")
+          }
+        />
+
         <Card
           title="GitHub"
           content="Visit my GitHub profile to explore my projects and contributions."
