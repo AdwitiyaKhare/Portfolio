@@ -28,7 +28,7 @@ export default function Content() {
         <h2>About</h2>
         <Card
           title="About Me"
-          content="B.Tech student in Mathematics and Computing from MITS Gwalior. Proficient in AI/ML, Web Development, and Problem Solving. Strong foundation in computer science with an emphasis on building scalable and efficient solutions."
+          content="Software Engineer (B.Tech, 2026) with proven experience in designing and deploying scalable, production-grade web applications using the MERN stack (MongoDB, Express.js, React.js, Node.js). Strong in cross-functional collaboration, REST API design, and integrating AI-powered workflows into full-stack systems. Focused on building impactful digital products, optimizing performance through data-driven approaches, and contributing to agile engineering teams that deliver measurable growth and efficiency."
           icon={<FaUser />}
         />
       </section>
@@ -36,29 +36,40 @@ export default function Content() {
       {/* Skills Section */}
       <section id="Skills">
         <h2>Skills</h2>
+
         <Card
           title="Programming Languages"
-          content="C, C++, Python, Java, SQL"
+          content="C, C++, Python, Java, JavaScript (ES6+), TypeScript, SQL"
           icon={<FaCode />}
         />
+
         <Card
-          title="Web Development"
-          content="HTML, CSS, JavaScript, React.js, Flask, Node.js, Express.js"
+          title="Frontend Development"
+          content="HTML5, CSS3, React.js, Next.js, EJS, Tailwind CSS"
           icon={<FaLaptopCode />}
         />
+
+        <Card
+          title="Backend & APIs"
+          content="Node.js, Express.js, RESTful APIs, GraphQL, Flask"
+          icon={<FaProjectDiagram />}
+        />
+
         <Card
           title="Databases"
-          content="MongoDB, MySQL"
+          content="MongoDB, MySQL, PostgreSQL, SQL / NoSQL Databases"
           icon={<FaDatabase />}
         />
+
         <Card
-          title="Deep Learning"
-          content="PyTorch, CNNs, Model Optimization"
+          title="AI / Machine Learning"
+          content="PyTorch, CNNs, LangChain, LangGraph, Model Optimization"
           icon={<FaBrain />}
         />
+
         <Card
           title="Tools & Platforms"
-          content="NumPy, Matplotlib, PIL, Google Colab, Git, GitHub"
+          content="Git, GitHub, Docker, Postman, CI/CD Pipelines, Render, Vercel, Netlify, Google Colab"
           icon={<FaCode />}
         />
       </section>
