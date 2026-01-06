@@ -23,13 +23,16 @@ export default function SidebarFooter() {
         .then((data) => {
           try {
             const parsedData = JSON.parse(data.contents);
+
             if (
               parsedData &&
               parsedData[0] &&
               parsedData[0].q &&
               parsedData[0].a
             ) {
+              // store normally
               const formattedQuote = `"${parsedData[0].q}" — ${parsedData[0].a}`;
+
               setQuote(formattedQuote);
               localStorage.setItem("quoteOfTheDay", formattedQuote);
               localStorage.setItem("quoteDate", today);
@@ -48,12 +51,30 @@ export default function SidebarFooter() {
     }
   }, []);
 
+  // 👇 Split quote and author safely
+  const splitQuote = () => {
+    if (!quote.includes("—")) return { text: quote, author: "" };
+
+    const [text, author] = quote.split("—");
+    return {
+      text: text.trim(),
+      author: `— ${author.trim()}`,
+    };
+  };
+
+  const { text, author } = splitQuote();
+
   return (
     <div className="sidebar-footer">
       <p style={{ marginBottom: "0.5rem", fontWeight: "bold" }}>
         Quote of the Day:
       </p>
-      <p style={{ fontSize: "0.75rem", opacity: 0.7 }}>{quote}</p>
+
+      <p style={{ fontSize: "0.75rem", opacity: 0.7 }}>
+        {text}
+        <br />
+        <span style={{ fontStyle: "italic", opacity: 0.8 }}>{author}</span>
+      </p>
     </div>
   );
 }
