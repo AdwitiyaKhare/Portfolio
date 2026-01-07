@@ -15,6 +15,7 @@ import {
   FaMapMarkerAlt,
   FaLinkedin,
   FaGlobe,
+  FaCertificate,
 } from "react-icons/fa";
 
 export default function Content() {
@@ -117,6 +118,35 @@ export default function Content() {
           onClick={() =>
             openLink("https://github.com/AdwitiyaKhare/food-classifier")
           }
+        />
+      </section>
+
+      {/* Certifications Section */}
+      <section id="Certifications">
+        <h2>Certifications</h2>
+
+        <Card
+          title="Full Stack Web Development (MERN)"
+          content="Comprehensive training covering React, Node.js, Express, MongoDB, REST APIs, authentication, and deployment."
+          icon={<FaCertificate />}
+        />
+
+        <Card
+          title="Machine Learning & Deep Learning"
+          content="Hands-on experience with CNNs, PyTorch, model training, evaluation, and optimization techniques."
+          icon={<FaCertificate />}
+        />
+
+        <Card
+          title="Data Structures & Algorithms"
+          content="Advanced problem-solving certification focusing on arrays, trees, graphs, DP, and competitive programming patterns."
+          icon={<FaCertificate />}
+        />
+
+        <Card
+          title="Cloud & Deployment Fundamentals"
+          content="Experience deploying full-stack applications using Render, Vercel, Netlify, Docker, and CI/CD pipelines."
+          icon={<FaCertificate />}
         />
       </section>
 
