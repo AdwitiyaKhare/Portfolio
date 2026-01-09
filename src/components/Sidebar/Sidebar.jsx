@@ -8,6 +8,7 @@ export default function Sidebar() {
     "About",
     "Skills",
     "Projects",
+    "Certifications",
     "Coding Profiles",
     "Contact",
   ];

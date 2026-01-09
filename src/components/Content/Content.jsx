@@ -126,27 +126,36 @@ export default function Content() {
         <h2>Certifications</h2>
 
         <Card
-          title="Full Stack Web Development (MERN)"
-          content="Comprehensive training covering React, Node.js, Express, MongoDB, REST APIs, authentication, and deployment."
+          title="Ethical Hacking (NPTEL – IIT Kharagpur)"
+          content="Elite NPTEL certification covering ethical hacking techniques, network security, vulnerability analysis, and cyber attack prevention. (Jul–Oct 2025)"
           icon={<FaCertificate />}
+          onClick={() =>
+            openLink(
+              "https://drive.google.com/file/d/16jVaQ22Sky7pxfm7aoaJ-BWQSYW0VGtf/view"
+            )
+          }
         />
 
         <Card
-          title="Machine Learning & Deep Learning"
-          content="Hands-on experience with CNNs, PyTorch, model training, evaluation, and optimization techniques."
+          title="Deep Learning (NPTEL – IIT Ropar)"
+          content="Elite certification focused on neural networks, CNNs, backpropagation, optimization techniques, and deep learning model training. (Jul–Oct 2025)"
           icon={<FaCertificate />}
+          onClick={() =>
+            openLink(
+              "https://drive.google.com/file/d/1HnUDtwS2dnlMbdwHCWQiKyvw9VeqrItw/view"
+            )
+          }
         />
 
         <Card
-          title="Data Structures & Algorithms"
-          content="Advanced problem-solving certification focusing on arrays, trees, graphs, DP, and competitive programming patterns."
+          title="Cloud Computing (NPTEL – IIT Kharagpur)"
+          content="Elite certification covering cloud computing fundamentals, virtualization, cloud service models (IaaS, PaaS, SaaS), and distributed systems. (Jan–Apr 2025)"
           icon={<FaCertificate />}
-        />
-
-        <Card
-          title="Cloud & Deployment Fundamentals"
-          content="Experience deploying full-stack applications using Render, Vercel, Netlify, Docker, and CI/CD pipelines."
-          icon={<FaCertificate />}
+          onClick={() =>
+            openLink(
+              "https://drive.google.com/file/d/1Pa15s9iSxgtaBj3fOpUKG4B3VUDRVoe6/view"
+            )
+          }
         />
       </section>
 
