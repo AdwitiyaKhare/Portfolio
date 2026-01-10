@@ -1,6 +1,7 @@
 import "./ProfileCard.css";
 import me from "../../assets/me.png";
 import { FaEnvelope, FaPhone, FaLinkedin } from "react-icons/fa";
+import { FaCode, FaServer, FaRobot, FaRocket } from "react-icons/fa";
 
 export default function ProfileCard() {
   const openLink = (url) => window.open(url, "_blank");
@@ -37,6 +38,25 @@ export default function ProfileCard() {
               <span>linkedin.com/in/adwitiyakhare</span>
             </div>
           </div>
+        </div>
+
+        {/* Core Strengths */}
+        <div className="core-strengths">
+          <h4>Core Strengths</h4>
+          <ul>
+            <li>
+              <FaCode /> Full-Stack (MERN)
+            </li>
+            <li>
+              <FaServer /> REST API Design
+            </li>
+            <li>
+              <FaRobot /> AI Integration
+            </li>
+            <li>
+              <FaRocket /> Deployment & Debugging
+            </li>
+          </ul>
         </div>
       </div>
     </div>
