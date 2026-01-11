@@ -1,0 +1,23 @@
+.profile-hero-row {
+  display: flex;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+/* True 50-50 with equal visual weight */
+.profile-hero-col {
+  flex: 1;
+  display: flex;
+}
+
+/* Make both cards fill height equally */
+.profile-hero-col > * {
+  width: 100%;
+}
+
+/* Stack on smaller screens */
+@media screen and (max-width: 900px) {
+  .profile-hero-row {
+    flex-direction: column;
+  }
+}

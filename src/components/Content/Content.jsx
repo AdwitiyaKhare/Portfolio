@@ -1,5 +1,5 @@
 import Card from "../Card/Card.jsx";
-import ProfileCard from "../ProfileCard/ProfileCard.jsx";
+import ProfileHero from "../ProfileHero/ProfileHero.jsx";
 import "./Content.css";
 import SidebarRight from "../Sidebar/SidebarRight.jsx";
 import {
@@ -24,7 +24,7 @@ export default function Content() {
   return (
     <div className="content-wrapper">
       {/* Profile Section */}
-      <ProfileCard />
+      <ProfileHero />
       <section id="About">
         <h2>About</h2>
         <Card

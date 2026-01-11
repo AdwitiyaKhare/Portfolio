@@ -3,17 +3,21 @@
   color: #222222;
   border-radius: 14px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  height: 100%;
+
+  padding: 1.6rem 1.8rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 🔑 vertical centering */
 }
 
 .core-strengths-card h4 {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #666666;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 .core-strengths-card ul {
@@ -25,13 +29,16 @@
 .core-strengths-card li {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.75rem;
+
   font-size: 0.95rem;
-  color: #444444;
-  margin-bottom: 0.7rem;
+  color: #333333;
+
+  padding: 0.4rem 0;
 }
 
 .core-strengths-card svg {
   color: #007700;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  min-width: 18px; /* keeps alignment clean */
 }
