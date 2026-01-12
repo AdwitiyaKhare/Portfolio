@@ -1,19 +1,19 @@
 .sidebar-right {
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100vh;
+  position: sticky;          /* 🔑 */
+  top: 1.5rem;
+
   width: 20rem;
   background-color: #f9f9f9;
   border-left: 1px solid #cccccc;
+  padding: 1.5rem 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1.5rem 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-  z-index: 100;
-  box-sizing: border-box;
 }
+
 
 .contact-heading {
   font-size: 1.4rem;

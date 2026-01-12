@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Sidebar from "../components/Sidebar/Sidebar.jsx";
 import Content from "../components/Content/Content.jsx";
 
 export default function Home() {
@@ -7,7 +6,6 @@ export default function Home() {
 
   return (
     <div className="app-container">
-      <Sidebar setActiveSection={setActiveSection} />
       <Content activeSection={activeSection} />
     </div>
   );

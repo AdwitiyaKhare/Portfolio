@@ -1,4 +1,4 @@
-import Button from "../Button/Button.jsx";
+import Button from "../../Button/Button.jsx";
 import "./Sidebar.css";
 import SidebarTop from "./SidebarTop.jsx";
 import SidebarFooter from "./SidebarFooter.jsx";

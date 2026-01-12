@@ -2,3 +2,22 @@
     scroll-behavior: smooth;
     padding: 2rem;
 }
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 1fr 20rem; /* main + sidebar */
+  gap: 2rem;
+  align-items: start;
+}
+
+.content-main {
+  min-width: 0; /* prevents overflow issues */
+}
+
+/* Responsive: stack sidebar below content */
+@media screen and (max-width: 1350px) {
+  .content-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
