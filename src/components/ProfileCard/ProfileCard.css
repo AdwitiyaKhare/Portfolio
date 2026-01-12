@@ -1,8 +1,5 @@
 .profile-card-wrapper {
     display: flex;
-    position: sticky;
-    top: -8px;
-    z-index: 1;
   }
   
   .profile-card {

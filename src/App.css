@@ -1,56 +1,23 @@
 .app-container {
-  position: relative;   /* ✅ Remove Fixed */
-  left: 20rem;
-  top: 0;
-  display: flex;
-  min-height: 100vh;     /* ✅ Let page grow */
-  width: calc(100% - 20rem);
+  min-height: 100vh;
+  width: 100%;
   background-color: #ffffff;
   color: #111111;
   font-family: 'Fira Code', monospace;
-  overflow: visible;     /* ✅ Allow scroll */
 }
 
+/* Optional generic content styling */
 .content-section {
   padding: 2rem;
-  overflow-y: auto;
-  flex-grow: 1;
   color: #111111;
 }
 
-@media screen and (max-width: 768px) {
-  .app-container {
-    left: 0;
-    width: 100%;
-    flex-direction: column;
-    position: relative;
-  }
+/* =====================
+   RESPONSIVE
+   ===================== */
 
+@media screen and (max-width: 768px) {
   .content-section {
     padding: 1rem;
-    height: auto;
-  }
-
-  .content-wrapper h2 {
-    margin-left: 2rem;
-  }
-
-  .sidebar {
-    position: sticky;
-    top: 8px;
-  }
-
-  .profile-details h2 {
-    margin: 0;
-  }
-
-  .sidebar-right {
-    justify-self: center;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content-wrapper {
-    padding: 0.1rem 0.1rem;
   }
 }

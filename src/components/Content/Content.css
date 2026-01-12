@@ -1,12 +1,11 @@
-.content-wrapper {
-    scroll-behavior: smooth;
-    padding: 2rem;
-}
-
 .content-layout {
   display: grid;
-  grid-template-columns: 1fr 20rem; /* main + sidebar */
+  grid-template-columns: 20rem 1fr 20rem;
   gap: 2rem;
+
+  max-width: 1600px;     /* ✅ keeps columns visually balanced */
+  margin: 0 auto;        /* ✅ centers entire layout */
+
   align-items: start;
 }
 
@@ -14,10 +13,10 @@
   min-width: 0; /* prevents overflow issues */
 }
 
-/* Responsive: stack sidebar below content */
-@media screen and (max-width: 1350px) {
-  .content-layout {
-    grid-template-columns: 1fr;
-  }
-}
 
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+
+/* Stack everything on smaller screens */

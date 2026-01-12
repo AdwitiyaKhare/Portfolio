@@ -1,16 +1,30 @@
 .profile-hero-row {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   align-items: stretch;
+
+  position: sticky;
+  top: 0;
+
+  z-index: 10;            /* 🔑 establish stacking priority */
+  background-color: #fff; /* 🔑 prevents bleed-through */
 }
 
-/* True 50-50 with equal visual weight */
-.profile-hero-col {
-  flex: 1;
+/* LEFT: 70% */
+.profile-hero-col:first-child {
+  flex: 7;
   display: flex;
+  z-index: 100;
 }
 
-/* Make both cards fill height equally */
+/* RIGHT: 30% */
+.profile-hero-col:last-child {
+  flex: 3;
+  display: flex;
+  z-index: 100;
+}
+
+/* Make both cards fill height */
 .profile-hero-col > * {
   width: 100%;
 }
@@ -19,5 +33,10 @@
 @media screen and (max-width: 900px) {
   .profile-hero-row {
     flex-direction: column;
+  }
+
+  .profile-hero-col:first-child,
+  .profile-hero-col:last-child {
+    flex: unset;
   }
 }
