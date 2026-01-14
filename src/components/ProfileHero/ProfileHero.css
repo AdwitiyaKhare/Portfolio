@@ -6,8 +6,8 @@
   position: sticky;
   top: 0;
 
-  z-index: 10;            /* 🔑 establish stacking priority */
-  background-color: #fff; /* 🔑 prevents bleed-through */
+  z-index: 10;      
+  background-color: #fff; 
 }
 
 /* LEFT: 70% */
