@@ -30,10 +30,15 @@
 }
 
 /* Stack on smaller screens */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1250px) {
   .profile-hero-row {
     flex-direction: column;
+    gap: 2px;
+
+    width: 100%;
   }
+
+
 
   .profile-hero-col:first-child,
   .profile-hero-col:last-child {

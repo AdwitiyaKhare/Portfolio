@@ -65,6 +65,12 @@
   box-shadow: 0 4px 12px rgba(0, 170, 0, 0.2);
 }
 
+@media screen and (max-width: 1242px) {
+  .card {
+    width: 98%;
+  }
+}
+
 @media screen and (max-width: 1100px) {
   .card {
     width: 90%;
