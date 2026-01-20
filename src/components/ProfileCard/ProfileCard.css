@@ -81,11 +81,6 @@
     color: #004499;
   }
   
-  @media screen and (max-width: 1100px) {
-    .profile-card {
-        width: 83%;
-    }
-  }
 
   @media screen and (max-width: 768px) {
     .profile-card-wrapper {
@@ -116,52 +111,3 @@
       font-size: 0.8rem;
     }
   }
-
-  /* =========================
-   Core Strengths (Add-on)
-   ========================= */
-
-.core-strengths {
-  min-width: 200px;
-  padding-left: 1.2rem;
-  border-left: 1px solid #eeeeee;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.core-strengths h4 {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #666666;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-bottom: 0.7rem;
-}
-
-.core-strengths ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.core-strengths li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: #444444;
-  margin-bottom: 0.5rem;
-}
-
-.core-strengths li svg {
-  color: #007700; /* matches your green */
-  font-size: 0.9rem;
-}
-
-/* Hide strengths on small screens (keeps mobile clean) */
-@media screen and (max-width: 768px) {
-  .core-strengths {
-    display: none;
-  }
-}
