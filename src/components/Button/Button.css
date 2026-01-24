@@ -44,11 +44,3 @@
     font-size: 0.6rem;
   }
 }
-
-@media screen and (max-width: 456px) {
-  .btn {
-    padding: 2px 2px !important;
-    font-weight: 900;
-    font-size: 0.55rem;
-  }
-}
