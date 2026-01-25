@@ -3,20 +3,15 @@
   grid-template-columns: 20rem 1fr 20rem;
   gap: 2rem;
 
-  max-width: 1600px;     /* ✅ keeps columns visually balanced */
-  margin: 0 auto;        /* ✅ centers entire layout */
+  max-width: 1600px;
+  margin: 0 auto;
 
   align-items: start;
 }
 
 .content-main {
-  min-width: 0; /* prevents overflow issues */
+  min-width: 0;
 }
 
 
 
-/* =====================
-   RESPONSIVE
-   ===================== */
-
-/* Stack everything on smaller screens */
