@@ -38,11 +38,11 @@
   align-items: center;
   gap: 0.6rem;
 
-  font-size: 0.95rem;           /* same as contact-item */
+  font-size: 0.95rem;
   color: #444444;
 }
 
-/* Icons aligned with ProfileCard icons */
+
 .core-strengths-card svg {
   color: #007700;
   font-size: 1.1rem;
