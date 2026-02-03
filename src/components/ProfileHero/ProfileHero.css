@@ -29,7 +29,6 @@
   width: 100%;
 }
 
-/* Stack on smaller screens */
 @media screen and (max-width: 1250px) {
   .profile-hero-row {
     flex-direction: column;
