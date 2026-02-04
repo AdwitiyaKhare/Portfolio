@@ -24,7 +24,6 @@
   z-index: 100;
 }
 
-/* Make both cards fill height */
 .profile-hero-col > * {
   width: 100%;
 }
