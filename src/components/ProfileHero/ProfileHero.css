@@ -17,7 +17,6 @@
   z-index: 100;
 }
 
-/* RIGHT: 30% */
 .profile-hero-col:last-child {
   flex: 3;
   display: flex;
